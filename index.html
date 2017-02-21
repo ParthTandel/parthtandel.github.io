@@ -1,0 +1,165 @@
+<html>
+<title>
+    Parth Tandel
+</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/animate.css">
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="scripts/app.js" type="text/javascript"></script>
+    <script src="scripts/services/services.js" type="text/javascript"></script>
+    <script src="scripts/controllers/portfolio.js" type="text/javascript"></script>
+</head>
+
+<div ng-app="portfolio">
+    <div id="scrollArea" ng-controller="ScrollCtrl">
+        <div id="nav-bar">
+            <div class="nav-left-box">
+                <a ng-click="activeMenu = 'Home'; gotoElement('home-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Home'}">HOME</a>
+                <a ng-click="activeMenu = 'About'; gotoElement('aboutme-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'About'}">ABOUT ME</a>
+                <a ng-click="activeMenu = 'Skills'; gotoElement('skills-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Skills'}">SKILLS</a>
+                <a ng-click="activeMenu = 'Pexp'; gotoElement('profExp-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Pexp'}">PROFESSIONAL EXPERIENCE</a>
+                <a ng-click="activeMenu = 'Proj'; gotoElement('porject-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Proj'}">PROJECTS</a>
+                <a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Cdet'}">CONTACT DETAILS</a>
+            </div>
+        </div>
+
+        <a id="home-anchor"></a>
+        <div id="section-intro">
+            <div class="intro animated fadeInDown">
+                <div>
+                    hello
+                </div>
+                <div>
+                    i'm parth
+                </div>
+                <div>
+                    i'm a full stack developer
+                </div>
+                <br>
+                <div>
+                    i push things from
+                </div>
+                <div>
+                    designers brain to code
+                </div>
+            </div>
+        </div>
+
+        <a id="aboutme-anchor"></a>
+        <div id="section-aboutMe">
+            <div class="section-header">
+                <h1>About me</h1>
+            </div>
+
+            <div class="section-content-aboutMe">
+                <div class="aboutMe-box">
+                    <div class="aboutMe-que">Who am i ?</div>
+                    <div class="aboutMe-ans">I am a fullstack developer currently based in Gujarat, interested in codes, design and working for startups. I graduated from Dhirubhai Ambani Institute of Information and Communication technology, Gandhinagar Gujarat. </div>
+                </div>
+                <div class="aboutMe-box">
+                    <div class="aboutMe-que">Who do i do ?</div>
+                    <div class="aboutMe-ans">I engineer websites, mobile applications, browser plugins etc. Pretty much Anything that deals with a computer program.</div>
+                </div>
+
+                <div class="aboutMe-box">
+                    <div class="aboutMe-que">Current Position ?</div>
+                    <div class="aboutMe-ans">Currently i am on a break working as a part time freelance developer. Have worked for two startups in past and currently looking for a new one to start fresh.</div>
+                </div>
+
+
+                <div class="aboutMe-box">
+                    <div class="aboutMe-que">Free time ?</div>
+                    <div class="aboutMe-ans">In my free time I do photography. I own a nikon D5100 and like to show off about it. Other than that i invest most of my time in watching tv series, movie and drinking beer.</div>
+                </div>
+
+
+                <div class="aboutMe-box">
+                    <div class="aboutMe-que">Questions ?</div>
+                    <div class="aboutMe-ans">well you can contact me anywhere <a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')" >here</a></div>
+                </div>
+            </div>
+        </div>
+
+        <a id="skills-anchor"></a>
+        <div id="section-skills">
+            <div class="section-header">
+                <h1>Skills</h1>
+            </div>
+
+            <div class="section-content-aboutMe">
+                <div class="aboutMe-box">
+                    <div class="aboutMe-que"> Backend</div>
+                    <div class="aboutMe-ans">Python, Django, Django-rest, Node.js, Loopback.js, PHP, Codeignitor, Java, c, c++</div>
+                </div>
+                <div class="aboutMe-box">
+                    <div class="aboutMe-que">Frontend</div>
+                    <div class="aboutMe-ans">Angular.js, Jquery, CSS3, HTML5</div>
+                </div>
+
+                <div class="aboutMe-box">
+                    <div class="aboutMe-que">Mobile, browser and Desktop</div>
+                    <div class="aboutMe-ans">react-native, chrome extentions, firefox plugin, java Swing.</div>
+                </div>
+
+
+                <div class="aboutMe-box">
+                    <div class="aboutMe-que">Database</div>
+                    <div class="aboutMe-ans">Mysql, MongoDB, pouch/couch db</div>
+                </div>
+
+
+                <div class="aboutMe-box">
+                    <div class="aboutMe-que">Other tools</div>
+                    <div class="aboutMe-ans">spacy, sci-kit learn, gensim, Stanford NLP</div>
+                </div>
+
+
+                <div class="aboutMe-box">
+                    <div class="aboutMe-que">Currently learning</div>
+                    <div class="aboutMe-ans">Machine Learning, Natural language processing, Information retrival, react and redux, docker</div>
+                </div>
+            </div>
+        </div>
+
+        <a id="profExp-anchor"></a>
+        <div id="section-profEx">
+            <div class="section-header">
+                <h1>Professional Experience</h1>
+            </div>
+            <div class="section-content-prof" ng-class="{ 'animated fadeInRight' : activeMenu === 'Pexp'}">
+
+            </div>
+        </div>
+
+        <a id="porject-anchor"></a>
+        <div id="section-project">
+            <div class="section-header">
+                <h1>Projects </h1>
+            </div>
+        </div>
+
+        <a id="contact-anchor"></a>
+        <div id="section-contact">
+            <div class="section-header">
+                <h1>Contact Details</h1>
+            </div>
+            <div class="section-content-contact" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Cdet'}">
+                <div>Parth Tandel</div>
+                <div> <a href="mailto:parthtandel0594@gmail.com">parthtandel0594@gmail.com</a></div>
+                <div>+91 (875) 800 6319</div>
+                <div> <a href="ParthTandelCv.pdf" target="_blank">Resume</a></div>
+                <div> <a href="https://github.com/ParthTandel" target="_blank">github.com/ParthTandel</a></div>
+                <div> <a href="https://www.linkedin.com/in/parth-tandel-657962a7" target="_blank">linkedin.com/in/parth-tandel-657962a7</a></div>
+                <div> <a href="https://angel.co/parth-tandel" target="_blank">angel.co/parth-tandel</a></div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</html>
