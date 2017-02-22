@@ -1,7 +1,6 @@
 angular.module('portfolio')
-    .service('anchorSmoothScroll', function() {
+    .service('anchorSmoothScroll', function($rootScope) {
         this.scrollTo = function(eID) {
-            console.log(eID);
             var startY = currentYPosition();
             var stopY = elmYPosition(eID);
             var distance = stopY > startY ? stopY - startY : startY - stopY;
@@ -16,6 +15,7 @@ angular.module('portfolio')
             var timer = 0;
             var i = 0;
             if (stopY > startY) {
+              $rootScope.reverse = false;
                 for (i = startY; i < stopY; i += step) {
                     setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
                     leapY += step;
@@ -23,6 +23,7 @@ angular.module('portfolio')
                     timer++;
                 }
             } else {
+              $rootScope.reverse = true;
                 for (i = startY; i > stopY; i -= step) {
                     setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
                     leapY -= step;
