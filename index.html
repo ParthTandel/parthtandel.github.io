@@ -6,25 +6,49 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/animate.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="/modules/angular/angular.min.js"></script>
     <script src="scripts/app.js" type="text/javascript"></script>
     <script src="scripts/services/services.js" type="text/javascript"></script>
     <script src="scripts/controllers/portfolio.js" type="text/javascript"></script>
 </head>
 
-<div ng-app="portfolio">
+<body ng-app="portfolio">
     <div id="scrollArea" ng-controller="ScrollCtrl">
         <div id="nav-bar">
+            <div class="logo"></div>
             <div class="nav-left-box">
-                <a ng-click="activeMenu = 'Home'; gotoElement('home-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Home'}">HOME</a>
-                <a ng-click="activeMenu = 'About'; gotoElement('aboutme-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'About'}">ABOUT ME</a>
-                <a ng-click="activeMenu = 'Skills'; gotoElement('skills-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Skills'}">SKILLS</a>
-                <a ng-click="activeMenu = 'Pexp'; gotoElement('profExp-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Pexp'}">PROFESSIONAL EXPERIENCE</a>
-                <a ng-click="activeMenu = 'Proj'; gotoElement('project-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Proj'}">PROJECTS</a>
-                <a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Cdet'}">CONTACT DETAILS</a>
+                <div class="nav-bar-icon" ng-class="{hide : toggle === false}">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true" ng-click="toggle = !toggle;"></i>
+                </div>
+
+                <div class="nav-bar-dropdown" ng-class="{hide : toggle === false}">
+                  <div class="nav-bar-div">
+                      <a ng-click="activeMenu = 'Home'; gotoElement('home-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Home'}">HOME</a>
+                  </div>
+
+                  <div class="nav-bar-div">
+                      <a ng-click="activeMenu = 'About'; gotoElement('aboutme-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'About'}">ABOUT ME</a>
+                  </div>
+
+                  <div class="nav-bar-div">
+                      <a ng-click="activeMenu = 'Skills'; gotoElement('skills-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Skills'}">SKILLS</a>
+                  </div>
+
+                  <div class="nav-bar-div">
+                      <a ng-click="activeMenu = 'Pexp'; gotoElement('profExp-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Pexp'}">PROFESSIONAL EXPERIENCE</a>
+                  </div>
+
+                  <div class="nav-bar-div">
+                      <a ng-click="activeMenu = 'Proj'; gotoElement('project-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Proj'}">PROJECTS</a>
+                  </div>
+
+                  <div class="nav-bar-div">
+                      <a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Cdet'}">CONTACT DETAILS</a>
+                  </div>
+                </div>
             </div>
         </div>
 
@@ -131,55 +155,54 @@
             <div class="section-header">
                 <h1>Professional Experience</h1>
             </div>
-            <div class="section-content-prof"
-                 ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Pexp' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'Pexp' && reverse == true   }">
+            <div class="section-content-prof" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Pexp' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'Pexp' && reverse == true   }">
                 <div class="company">
                     <div class="image-box">
                         <a href="http://creatx.io/home" target="_blank">
-                          <img  alt="creatx" src="../assets/images/creatx.png" width="340" height="200">
-                          <div class="image-footer">
-                            creatx.io
-                          </div>
+                            <img alt="creatx" src="../assets/images/creatx.png" width="340" height="200">
+                            <div class="image-footer">
+                                creatx.io
+                            </div>
                         </a>
                     </div>
                     <div class="content-box">
 
-                      <div class="company-info">
-                        <div class="company-title">
-                          Thought(x) Media
-                        </div>
-                        <span class="company-position">
+                        <div class="company-info">
+                            <div class="company-title">
+                                Thought(x) Media
+                            </div>
+                            <span class="company-position">
                           Full Stack Developer
                         </span>
-                        <span class="company-period">
+                            <span class="company-period">
                           May 2016 - Nov 2016
                         </span>
-                      </div>
+                        </div>
                         <div class="company-description">
-                          Creatx.io is a robust workflow management system designed for all your digital content publishing needs. Creatx.io is meant for both individuals and teams.
+                            Creatx.io is a robust workflow management system designed for all your digital content publishing needs. Creatx.io is meant for both individuals and teams.
                         </div>
                         <div class="company-experience">
-                          <div class="company-exp-bullets">
-                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                            <span>worked on front-end module of creat(x) app using angularJs.</span>
-                          </div>
-                          <div class="company-exp-bullets">
-                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                            <span>worked on back-end module of creat(x) app using Django-Rest Framework.</span>
-                          </div>
-                          <div class="company-exp-bullets">
-                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                            <span>worked on the main algorithm of clustering articles involving NLP and machine learning using Gensim, scikit learn, Spacy etc.</span>
-                          </div>
+                            <div class="company-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>worked on front-end module of creat(x) app using angularJs.</span>
+                            </div>
+                            <div class="company-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>worked on back-end module of creat(x) app using Django-Rest Framework.</span>
+                            </div>
+                            <div class="company-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>worked on the main algorithm of clustering articles involving NLP and machine learning using Gensim, scikit learn, Spacy etc.</span>
+                            </div>
 
-                          <div class="company-exp-bullets">
-                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                            <span>Developed a dash board for caring out experiments on clustering algoritm using Django-Python.</span>
-                          </div>
-                          <div class="company-exp-bullets">
-                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                            <span>Developed creatx plugin for web browsers both chrome and Firefox.</span>
-                          </div>
+                            <div class="company-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>Developed a dash board for caring out experiments on clustering algoritm using Django-Python.</span>
+                            </div>
+                            <div class="company-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>Developed creatx plugin for web browsers both chrome and Firefox.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,51 +210,52 @@
                 <div class="company">
                     <div class="image-box">
                         <a href="https://www.plexusmd.com/home" target="_blank">
-                          <img  alt="creatx" src="../assets/images/plexus.png" width="340" height="200">
-                          <div class="image-footer">
-                            plexusmd
-                          </div>
+                            <img alt="creatx" src="../assets/images/plexus.png" width="340" height="200">
+                            <div class="image-footer">
+                                plexusmd
+                            </div>
                         </a>
                     </div>
                     <div class="content-box">
 
-                      <div class="company-info">
-                        <div class="company-title">
-                          PlexusMd Professional
-                        </div>
-                        <span class="company-position">
+                        <div class="company-info">
+                            <div class="company-title">
+                                PlexusMd Professional
+                            </div>
+                            <span class="company-position">
                           Full Stack Developer
                         </span>
-                        <span class="company-period">
+                            <span class="company-period">
                           Dec 2016 - April 2016
                         </span>
-                      </div>
+                        </div>
                         <div class="company-description">
-                          PlexusMD is an exclusive professional network for doctors and healthcare organizations. On PlexusMD, doctors can find and connect with their alumni and colleagues, share and read interesting cases, read the latest news and apply to jobs, courses and fellowships across India's leading institutions.
+                            PlexusMD is an exclusive professional network for doctors and healthcare organizations. On PlexusMD, doctors can find and connect with their alumni and colleagues, share and read interesting cases, read the latest news and apply to jobs, courses and fellowships
+                            across India's leading institutions.
                         </div>
                         <div class="company-experience">
-                          <div class="company-exp-bullets">
-                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                            <span>Worked on CodeIgniter PHP for both backend RESTApis and frontend MVC.</span>
-                          </div>
-                          <div class="company-exp-bullets">
-                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                            <span>worked on Gearman job server.</span>
-                          </div>
-                          <div class="company-exp-bullets">
-                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                            <span>managed AWS for staging and testing environments.</span>
-                          </div>
+                            <div class="company-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>Worked on CodeIgniter PHP for both backend RESTApis and frontend MVC.</span>
+                            </div>
+                            <div class="company-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>worked on Gearman job server.</span>
+                            </div>
+                            <div class="company-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>managed AWS for staging and testing environments.</span>
+                            </div>
 
-                          <div class="company-exp-bullets">
-                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                            <span>HTML, CSS and js.</span>
-                          </div>
+                            <div class="company-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>HTML, CSS and js.</span>
+                            </div>
 
-                          <div class="company-exp-bullets">
-                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                            <span>Developed company newsletters and emails </span>
-                          </div>
+                            <div class="company-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>Developed company newsletters and emails </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -244,92 +268,92 @@
                 <h1>Projects </h1>
             </div>
             <div class="section-content-project" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Proj' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'Proj' && reverse == true   }">
-              <div class="project">
-                  <div class="content-box">
-                    <div class="project-info">
-                      <div class="project-title">
-                        Stock Falcon
-                      </div>
-                      <span class="project-place">
+                <div class="project">
+                    <div class="content-box">
+                        <div class="project-info">
+                            <div class="project-title">
+                                Stock Falcon
+                            </div>
+                            <span class="project-place">
                         DA-IICT
                       </span>
-                      <span class="project-period">
+                            <span class="project-period">
                         Jan 2016 - May 2016
                       </span>
+                        </div>
+                        <div class="project-description">
+                            Stock falcon is a NIFTY companies based predication portal which allows you to maintain your portfolio online and provides you with other tools that deals with stock prices.
+                        </div>
+                        <div class="project-experience">
+                            <div class="project-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>lead the development team for the course of the project.</span>
+                            </div>
+                            <div class="project-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>worked on back-end as well as Front-end modules involving PHP.</span>
+                            </div>
+                            <div class="project-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>designed the application flow.</span>
+                            </div>
+                            <div class="project-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>deployed to aws and hosted using bitnammi.</span>
+                            </div>
+                            <div class="project-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>Designed and deployed database on MySQL.</span>
+                            </div>
+                        </div>
                     </div>
-                      <div class="project-description">
-                        Stock falcon is a NIFTY companies based predication portal which allows you to maintain your portfolio online and provides you with other tools that deals with stock prices.
-                      </div>
-                      <div class="project-experience">
-                        <div class="project-exp-bullets">
-                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                          <span>lead the development team for the course of the project.</span>
-                        </div>
-                        <div class="project-exp-bullets">
-                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                          <span>worked on back-end as well as Front-end modules involving PHP.</span>
-                        </div>
-                        <div class="project-exp-bullets">
-                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                          <span>designed the application flow.</span>
-                        </div>
-                        <div class="project-exp-bullets">
-                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                          <span>deployed to aws and hosted using bitnammi.</span>
-                        </div>
-                        <div class="project-exp-bullets">
-                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                          <span>Designed and deployed database on MySQL.</span>
-                        </div>
-                      </div>
-                  </div>
 
-                  <div class="image-box">
-                      <a href="https://github.com/ParthTandel/Stock_Falcon" target="_blank">
-                        <img  alt="creatx" src="../assets/images/stockfalcon.png" width="340" height="200">
-                        <div class="image-footer">
-                          stock falcon
-                        </div>
-                      </a>
-                  </div>
-              </div>
+                    <div class="image-box">
+                        <a href="https://github.com/ParthTandel/Stock_Falcon" target="_blank">
+                            <img alt="creatx" src="../assets/images/stockfalcon.png" width="340" height="200">
+                            <div class="image-footer">
+                                stock falcon
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
-              <div class="project">
-                  <div class="content-box">
-                    <div class="project-info">
-                      <div class="project-title">
-                        Enterprise Search Engine
-                      </div>
-                      <span class="project-place">
+                <div class="project">
+                    <div class="content-box">
+                        <div class="project-info">
+                            <div class="project-title">
+                                Enterprise Search Engine
+                            </div>
+                            <span class="project-place">
                         DA-IICT
                       </span>
-                      <span class="project-period">
+                            <span class="project-period">
                         May 2015 - June 2015
                       </span>
+                        </div>
+                        <div class="project-description">
+                            A Research project involving studying different indexing tool and algorithms and summing up them to build a working search engine. Also the indexing was distributed over different machines using zookeeper.
+                        </div>
+                        <div class="project-experience">
+                            <div class="project-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>Studied algorithms such a BM25, Cosine Similarity and Td-idf for information retrieval</span>
+                            </div>
+                            <div class="project-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>worked on back-end as well as Front-end modules involving PHP.</span>
+                            </div>
+                            <div class="project-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>worked on Apache Lucene, Apache Solr, Zookeeper .</span>
+                            </div>
+                            <div class="project-exp-bullets">
+                                <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span>presented a term paper on this project.</span>
+                            </div>
+                        </div>
                     </div>
-                      <div class="project-description">
-                        A Research project involving studying different indexing tool and algorithms and summing up them to build a working search engine. Also the indexing was distributed over different machines using zookeeper.
-                      </div>
-                      <div class="project-experience">
-                        <div class="project-exp-bullets">
-                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                          <span>Studied algorithms such a BM25, Cosine Similarity and Td-idf for information retrieval</span>
-                        </div>
-                        <div class="project-exp-bullets">
-                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                          <span>worked on back-end as well as Front-end modules involving PHP.</span>
-                        </div>
-                        <div class="project-exp-bullets">
-                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                          <span>worked on Apache Lucene, Apache Solr, Zookeeper .</span>
-                        </div>
-                        <div class="project-exp-bullets">
-                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                          <span>presented a term paper on this project.</span>
-                        </div>
-                      </div>
-                  </div>
-              </div>
+                </div>
 
             </div>
         </div>
@@ -352,6 +376,6 @@
         </div>
 
     </div>
-</div>
+</body>
 
 </html>
