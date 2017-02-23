@@ -23,7 +23,7 @@
                 <a ng-click="activeMenu = 'About'; gotoElement('aboutme-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'About'}">ABOUT ME</a>
                 <a ng-click="activeMenu = 'Skills'; gotoElement('skills-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Skills'}">SKILLS</a>
                 <a ng-click="activeMenu = 'Pexp'; gotoElement('profExp-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Pexp'}">PROFESSIONAL EXPERIENCE</a>
-                <a ng-click="activeMenu = 'Proj'; gotoElement('porject-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Proj'}">PROJECTS</a>
+                <a ng-click="activeMenu = 'Proj'; gotoElement('project-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Proj'}">PROJECTS</a>
                 <a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Cdet'}">CONTACT DETAILS</a>
             </div>
         </div>
@@ -91,7 +91,7 @@
                 <h1>Skills</h1>
             </div>
 
-            <div class="section-content-aboutMe" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Skills' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'Skills' && reverse == true}">
+            <div class="section-content-skills" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Skills' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'Skills' && reverse == true}">
                 <div class="aboutMe-box">
                     <div class="aboutMe-que"> Backend</div>
                     <div class="aboutMe-ans">Python, Django, Django-rest, Node.js, Loopback.js, PHP, Codeignitor, Java, c, c++</div>
@@ -227,16 +227,110 @@
                             <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
                             <span>HTML, CSS and js.</span>
                           </div>
+
+                          <div class="company-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Developed company newsletters and emails </span>
+                          </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <a id="porject-anchor"></a>
+        <a id="project-anchor"></a>
         <div id="section-project">
             <div class="section-header">
                 <h1>Projects </h1>
+            </div>
+            <div class="section-content-project">
+              <div class="project">
+                  <div class="content-box">
+                    <div class="project-info">
+                      <div class="project-title">
+                        Stock Falcon
+                      </div>
+                      <span class="project-place">
+                        DA-IICT
+                      </span>
+                      <span class="project-period">
+                        Jan 2016 - May 2016
+                      </span>
+                    </div>
+                      <div class="project-description">
+                        Stock falcon is a NIFTY companies based predication portal which allows you to maintain your portfolio online and provides you with other tools that deals with stock prices.
+                      </div>
+                      <div class="project-experience">
+                        <div class="project-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>lead the development team for the course of the project.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>worked on back-end as well as Front-end modules involving PHP.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>designed the application flow.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>deployed to aws and hosted using bitnammi.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>Designed and deployed database on MySQL.</span>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="image-box">
+                      <a href="https://github.com/ParthTandel/Stock_Falcon" target="_blank">
+                        <img  alt="creatx" src="../assets/images/stockfalcon.png" width="340" height="200">
+                        <div class="image-footer">
+                          stock falcon
+                        </div>
+                      </a>
+                  </div>
+              </div>
+
+              <div class="project">
+                  <div class="content-box">
+                    <div class="project-info">
+                      <div class="project-title">
+                        Enterprise Search Engine
+                      </div>
+                      <span class="project-place">
+                        DA-IICT
+                      </span>
+                      <span class="project-period">
+                        May 2015 - June 2015
+                      </span>
+                    </div>
+                      <div class="project-description">
+                        A Research project involving studying different indexing tool and algorithms and summing up them to build a working search engine. Also the indexing was distributed over different machines using zookeeper.
+                      </div>
+                      <div class="project-experience">
+                        <div class="project-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>Studied algorithms such a BM25, Cosine Similarity and Td-idf for information retrieval</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>worked on back-end as well as Front-end modules involving PHP.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>worked on Apache Lucene, Apache Solr, Zookeeper .</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>presented a term paper on this project.</span>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
             </div>
         </div>
 

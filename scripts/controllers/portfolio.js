@@ -6,5 +6,5 @@ angular.module('portfolio')
             anchorSmoothScroll.scrollTo(eID);
             console.log($rootScope.reverse);
         };
-        $scope.gotoElement('home-anchor');
+        $scope.gotoElement('project-anchor');
     });

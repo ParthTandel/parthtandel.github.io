@@ -97,32 +97,31 @@ html, body {
 #section-profEx {
     padding-top: 60px;
     min-height: 90vh;
-    padding-bottom: 70px;
-    background-color: #2c3e51;
+    background-color: #0c2744;
 }
 
 #section-project {
     padding-top: 60px;
     min-height: 90vh;
-    background-color: #029bde;
+    background-color: #002784;
 }
 
 #section-contact {
     padding-top: 60px;
     min-height: 90vh;
-    background-color: #2c3e51;
+    background-color: #0c2744;
 }
 
 #section-aboutMe {
     padding-top: 60px;
     min-height: 90vh;
-    background-color: #2c3e51;
+    background-color: #0c2744;
 }
 
 #section-skills {
     padding-top: 60px;
     min-height: 90vh;
-    background-color: #029bde;
+    background-color: #002784;
 }
 
 #section-intro {
@@ -146,7 +145,7 @@ html, body {
     font-family: Raleway-Thin;
 }
 
-.section-content-aboutMe {
+.section-content-aboutMe, .section-content-skills {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,13 +201,15 @@ a:hover {
     color: #00abe4;
 }
 
-.section-content-prof {
+.section-content-prof, .section-content-project {
     margin: 20px 100px 0px 100px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 70px;
+
 }
 
-.section-content-prof .company {
+.company, .project {
     display: flex;
     align-items: flex-start;
     padding: 10px;
@@ -216,11 +217,56 @@ a:hover {
     color: #ddd;
 }
 
-.company .image-box img {
+.company-title, .project-title {
+    font-family: Quicksand-Regular;
+    font-size: 30px;
+    color: #E74A64;
+}
+
+.company-info, .project-info {
+    font-family: Quicksand-Regular;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.company-period, .project-period {
+    font-size: 14px;
+}
+
+.company-description, .project-description {
+    font-family: Quicksand-Regular;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.company-exp-bullets, .project-exp-bullets {
+    font-family: Quicksand-Regular;
+    font-size: 16px;
+}
+
+.company .content-box {
+    margin-left: 40px;
+}
+
+.project .content-box {
+    margin-right: 20px;
+}
+
+.image-box {
+    border-radius: 10px;
+}
+
+.image-box:hover {
+    -moz-box-shadow: 3px 3px 5px #999;
+    -webkit-box-shadow: 3px 3px 5px #999;
+    box-shadow: 3px 3px 5px #999;
+}
+
+.image-box img {
     border-radius: 10px 10px 0px 0px;
 }
 
-.company .image-footer {
+.image-footer {
     border-radius: 0px 0px 10px 10px;
     text-align: center;
     background-color: #fff;
@@ -229,79 +275,6 @@ a:hover {
     font-size: 20px;
     font-family: Raleway-thin;
 }
-
-.company .content-box {
-    margin-left: 40px;
-}
-
-.company-title {
-    font-family: Quicksand-Regular;
-    font-size: 30px;
-    color: #E74A64;
-}
-
-.company-info {
-    font-family: Quicksand-Regular;
-    font-size: 20px;
-    padding-bottom: 15px;
-}
-
-.company-period {
-    font-size: 14px;
-}
-
-.company-description {
-    font-family: Quicksand-Regular;
-    font-size: 16px;
-    padding-bottom: 15px;
-}
-
-.company-exp-bullets {
-  font-family: Quicksand-Regular;
-  font-size: 16px;
-}
-
-.image-box{
-  border-radius: 10px;
-}
-
-.company .image-box:hover{
-  -moz-box-shadow: 3px 3px 5px #999;
-    -webkit-box-shadow: 3px 3px 5px #999;
-        box-shadow: 3px 3px 5px #999;
-}
-
-/*.company-exp-bullets div:nth-child(2)
-{
-  padding: 0;
-  margin: 0;
-}*/
-/*.company .image-box:hover{
-  -webkit-box-shadow: 0 10px 6px -6px white;
-  -moz-box-shadow: 0 10px 6px -6px white;
-  box-shadow: 0 10px 6px -6px white;
-}*/
-
-
-/*
-.image-box figure {
-    padding: 0;
-    margin: 0;
-}
-*/
-
-
-/*-webkit-box-shadow: 0 10px 6px -6px white;
--moz-box-shadow: 0 10px 6px -6px white;
-box-shadow: 0 10px 6px -6px white;*/
-
-
-/*.image-box figcaption {
-    text-align: center;
-    padding: 10px;
-    background-color: grey;
-    color: white;
-}*/
 
 .section-header h1 {
     color: #ffffff;
