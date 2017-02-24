@@ -4,9 +4,9 @@ angular.module('portfolio')
         $rootScope.reverse = false;
         $scope.toggle = false;
         $scope.gotoElement = function(eID) {
+            console.log($scope.toggle);
             anchorSmoothScroll.scrollTo(eID);
             $scope.toggle = false;
-            console.log($scope.toggle);
         };
         $scope.gotoElement('home-anchor');
     });
