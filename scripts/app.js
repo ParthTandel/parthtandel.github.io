@@ -1,37 +1,14 @@
-var app = angular.module('portfolio', []);
-// app.config(['$routeProvider', function($routeProvider) {
-//     $routeProvider
-//         .when('/', {
-//             templateUrl: 'views/home.html'
-//         })
-//         .when('/bookings', {
-//             templateUrl: 'views/booking.html',
-//             // controller :
-//         })
-//         .when('/flights', {
-//             templateUrl: 'views/flights.html',
-//             // controller :
-//         })
-//         .otherwise({
-//             redirectTo: '/'
-//         });
-// }]);
-// app.config(function($stateProvider, $urlRouterProvider) {
-//
-//     $urlRouterProvider.otherwise('/bookings');
-//
-//     $stateProvider
-//         .state('bookings', {
-//             url: "/bookings",
-//             templateUrl: 'views/booking.html',
-//             controller: 'booking'
-//         })
-//         .state('flights', {
-//             url: "/flights/:bookingDetails",
-//             templateUrl: 'views/flights.html',
-//             controller: 'flights'
-//             // params: {
-//             //     bookingDetails: null,
-//             // }
-//         });
-// });
+var app = angular.module('portfolio', ['ui.router']);
+app.config(function($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise('/');
+    $stateProvider
+        .state('home', {
+            url: "/",
+            templateUrl: 'views/portfolio.html',
+            controller: 'ScrollCtrl'
+        });
+});
+app.config(["$locationProvider", function($locationProvider) {
+  $locationProvider.html5Mode(true);
+}]);

@@ -1,0 +1,345 @@
+<div id="scrollArea">
+    <div id="nav-bar">
+        <nav class="nav-bar-menu">
+            <div class="nav-section-top">
+                <div class="logo">
+                </div>
+                <div class="nav-bar-icon">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true" ng-click="toggle = !toggle;"></i>
+                </div>
+            </div>
+            <ul class="nav-dropdown" ng-class="{ show : toggle === true}">
+                <li><a ng-click="activeMenu = 'Home'; gotoElement('home-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Home'}">HOME</a></li>
+                <li><a ng-click="activeMenu = 'About'; gotoElement('aboutme-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'About'}">ABOUT ME</a></li>
+                <li><a ng-click="activeMenu = 'Skills'; gotoElement('skills-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Skills'}">SKILLS</a></li>
+                <li><a ng-click="activeMenu = 'Pexp'; gotoElement('profExp-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Pexp'}">PROFESSIONAL EXPERIENCE</a></li>
+                <li><a ng-click="activeMenu = 'Proj'; gotoElement('project-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Proj'}">PROJECTS</a></li>
+                <li><a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Cdet'}">CONTACT DETAILS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a id="home-anchor"></a>
+    <div id="section-intro">
+        <div class="intro animated fadeInDown">
+            <div>
+                hello
+            </div>
+            <div>
+                i'm parth
+            </div>
+            <div>
+                i'm a full stack developer
+            </div>
+            <br>
+            <div>
+                i push things from
+            </div>
+            <div>
+                designs to code
+            </div>
+        </div>
+    </div>
+
+    <a id="aboutme-anchor"></a>
+    <div id="section-aboutMe">
+        <div class="section-header">
+            <h1>About me</h1>
+        </div>
+
+        <div class="section-content-aboutMe" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'About' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'About' && reverse == true}">
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Who am i ?</div>
+                <div class="aboutMe-ans">I am a fullstack developer currently based in Gujarat, interested in codes, design and working for startups. I graduated from Dhirubhai Ambani Institute of Information and Communication technology, Gandhinagar Gujarat. </div>
+            </div>
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Who do i do ?</div>
+                <div class="aboutMe-ans">I engineer websites, mobile applications, browser plugins etc. Pretty much Anything that deals with a computer program.</div>
+            </div>
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Current Position ?</div>
+                <div class="aboutMe-ans">Currently i am on a break working as a part time freelance developer. Have worked for two startups in past and currently looking for a new one to start fresh.</div>
+            </div>
+
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Free time ?</div>
+                <div class="aboutMe-ans">In my free time I do photography. I own a nikon D5100 and like to show off about it. Other than that i invest most of my time in watching tv series, movie and drinking beer.</div>
+            </div>
+
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Questions ?</div>
+                <div class="aboutMe-ans">well you can contact me anywhere <a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')">here</a></div>
+            </div>
+        </div>
+    </div>
+
+    <a id="skills-anchor"></a>
+    <div id="section-skills">
+        <div class="section-header">
+            <h1>Skills</h1>
+        </div>
+
+        <div class="section-content-skills" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Skills' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'Skills' && reverse == true}">
+            <div class="aboutMe-box">
+                <div class="aboutMe-que"> Backend</div>
+                <div class="aboutMe-ans">Python, Django, Django-rest, Node.js, Loopback.js, PHP, Codeignitor, Java, c, c++</div>
+            </div>
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Frontend</div>
+                <div class="aboutMe-ans">Angular.js, Jquery, CSS3, HTML5</div>
+            </div>
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Mobile, browser and Desktop</div>
+                <div class="aboutMe-ans">react-native, chrome extentions, firefox plugin, java Swing.</div>
+            </div>
+
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Database</div>
+                <div class="aboutMe-ans">Mysql, MongoDB, pouch/couch db</div>
+            </div>
+
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Other tools</div>
+                <div class="aboutMe-ans">spacy, sci-kit learn, gensim, Stanford NLP</div>
+            </div>
+
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Currently learning</div>
+                <div class="aboutMe-ans">Machine Learning, Natural language processing, Information retrival, react and redux, docker</div>
+            </div>
+        </div>
+    </div>
+
+    <a id="profExp-anchor"></a>
+    <div id="section-profEx">
+        <div class="section-header">
+            <h1>Professional Experience</h1>
+        </div>
+        <div class="section-content-prof" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Pexp' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'Pexp' && reverse == true   }">
+            <div class="company">
+                <div class="image-box">
+                    <a href="http://creatx.io/home" target="_blank">
+                        <img alt="creatx" src="../assets/images/creatx.png" width="340" height="200">
+                        <div class="image-footer">
+                            creatx.io
+                        </div>
+                    </a>
+                </div>
+                <div class="content-box">
+
+                    <div class="company-info">
+                        <div class="company-title">
+                            Thought(x) Media
+                        </div>
+                        <span class="company-position">
+                      Full Stack Developer
+                    </span>
+                        <span class="company-period">
+                      May 2016 - Nov 2016
+                    </span>
+                    </div>
+                    <div class="company-description">
+                        Creatx.io is a robust workflow management system designed for all your digital content publishing needs. Creatx.io is meant for both individuals and teams.
+                    </div>
+                    <div class="company-experience">
+                        <div class="company-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>worked on front-end module of creat(x) app using angularJs.</span>
+                        </div>
+                        <div class="company-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>worked on back-end module of creat(x) app using Django-Rest Framework.</span>
+                        </div>
+                        <div class="company-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>worked on the main algorithm of clustering articles involving NLP and machine learning using Gensim, scikit learn, Spacy etc.</span>
+                        </div>
+
+                        <div class="company-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Developed a dash board for caring out experiments on clustering algoritm using Django-Python.</span>
+                        </div>
+                        <div class="company-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Developed creatx plugin for web browsers both chrome and Firefox.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="company">
+                <div class="image-box">
+                    <a href="https://www.plexusmd.com/home" target="_blank">
+                        <img alt="creatx" src="../assets/images/plexus.png" width="340" height="200">
+                        <div class="image-footer">
+                            plexusmd
+                        </div>
+                    </a>
+                </div>
+                <div class="content-box">
+
+                    <div class="company-info">
+                        <div class="company-title">
+                            PlexusMd Professional
+                        </div>
+                        <span class="company-position">
+                      Full Stack Developer
+                    </span>
+                        <span class="company-period">
+                      Dec 2016 - April 2016
+                    </span>
+                    </div>
+                    <div class="company-description">
+                        PlexusMD is an exclusive professional network for doctors and healthcare organizations. On PlexusMD, doctors can find and connect with their alumni and colleagues, share and read interesting cases, read the latest news and apply to jobs, courses and fellowships
+                        across India's leading institutions.
+                    </div>
+                    <div class="company-experience">
+                        <div class="company-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Worked on CodeIgniter PHP for both backend RESTApis and frontend MVC.</span>
+                        </div>
+                        <div class="company-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>worked on Gearman job server.</span>
+                        </div>
+                        <div class="company-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>managed AWS for staging and testing environments.</span>
+                        </div>
+
+                        <div class="company-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>HTML, CSS and js.</span>
+                        </div>
+
+                        <div class="company-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Developed company newsletters and emails </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a id="project-anchor"></a>
+    <div id="section-project">
+        <div class="section-header">
+            <h1>Projects </h1>
+        </div>
+        <div class="section-content-project" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Proj' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'Proj' && reverse == true   }">
+            <div class="project">
+                <div class="content-box">
+                    <div class="project-info">
+                        <div class="project-title">
+                            Stock Falcon
+                        </div>
+                        <span class="project-place">
+                    DA-IICT
+                  </span>
+                        <span class="project-period">
+                    Jan 2016 - May 2016
+                  </span>
+                    </div>
+                    <div class="project-description">
+                        Stock falcon is a NIFTY companies based predication portal which allows you to maintain your portfolio online and provides you with other tools that deals with stock prices.
+                    </div>
+                    <div class="project-experience">
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>lead the development team for the course of the project.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>worked on back-end as well as Front-end modules involving PHP.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>designed the application flow.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>deployed to aws and hosted using bitnammi.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Designed and deployed database on MySQL.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-box">
+                    <a href="https://github.com/ParthTandel/Stock_Falcon" target="_blank">
+                        <img alt="creatx" src="../assets/images/stockfalcon.png" width="340" height="200">
+                        <div class="image-footer">
+                            stock falcon
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="content-box">
+                    <div class="project-info">
+                        <div class="project-title">
+                            Enterprise Search Engine
+                        </div>
+                        <span class="project-place">
+                    DA-IICT
+                  </span>
+                        <span class="project-period">
+                    May 2015 - June 2015
+                  </span>
+                    </div>
+                    <div class="project-description">
+                        A Research project involving studying different indexing tool and algorithms and summing up them to build a working search engine. Also the indexing was distributed over different machines using zookeeper.
+                    </div>
+                    <div class="project-experience">
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Studied algorithms such a BM25, Cosine Similarity and Td-idf for information retrieval</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>worked on back-end as well as Front-end modules involving PHP.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>worked on Apache Lucene, Apache Solr, Zookeeper .</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>presented a term paper on this project.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <a id="contact-anchor"></a>
+    <div id="section-contact">
+        <div class="section-header">
+            <h1>Contact Details</h1>
+        </div>
+        <div class="section-content-contact" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Cdet' }">
+            <div>Parth Tandel</div>
+            <div> <a href="mailto:parthtandel0594@gmail.com">parthtandel0594@gmail.com</a></div>
+            <div>+91 (875) 800 6319</div>
+            <div> <a href="ParthTandelCv.pdf" target="_blank">Resume</a></div>
+            <div> <a href="https://github.com/ParthTandel" target="_blank">github.com/ParthTandel</a></div>
+            <div> <a href="https://www.linkedin.com/in/parth-tandel-657962a7" target="_blank">linkedin.com/in/parth-tandel-657962a7</a></div>
+            <div> <a href="https://angel.co/parth-tandel" target="_blank">angel.co/parth-tandel</a></div>
+
+        </div>
+    </div>
+
+</div>

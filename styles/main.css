@@ -142,13 +142,6 @@ html, body {
     display: flex;
 }*/
 
-.intro {
-    /*margin: 50px 0 0 100px;*/
-    padding: 0;
-    margin: 50px 0 0 0px;
-    text-align: center;
-}
-
 #section-profEx {
     padding-top: 60px;
     min-height: 90vh;
@@ -182,11 +175,11 @@ html, body {
 #section-intro {
     padding-top: 60px;
     height: 100vh;
-    /*background-image: url("../assets/images/CSC_0610.JPG");
+    background-image: url("../assets/images/CSC_0610.JPG");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;*/
-    background-color: #cccccc;
+    background-position: center center;
+    /*background-color: #cccccc;*/
     margin: 0;
 }
 
@@ -331,6 +324,16 @@ a:hover {
     padding: 10px 100px 10px;
 }
 
+.intro {
+    /*margin: 50px 0 0 100px;*/
+    padding: 50px 0 0 100px;
+    margin: 0;
+    height: 92vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    ;
+    text-align: left;
+}
+
 .intro div:nth-child(1) {
     font-size: 147px;
     color: #ff3d5e;
@@ -353,11 +356,19 @@ a:hover {
 }
 
 .intro div:nth-child(6) {
-    font-size: 30px;
+    font-size: 45px;
+    margin-top: 10px;
     color: #325dec;
 }
 
 @media only screen and (max-width: 800px) {
+    .intro {
+        text-align: center;
+        padding-left: 0px;
+        background-color: #ccc;
+    }
+
+
     .section-header h1 {
         padding: 10px;
         text-align: center;
@@ -483,8 +494,8 @@ a:hover {
         color: #325dec;
     }
     .intro div:nth-child(6) {
-        margin-top: 5px;
-        font-size: 20px;
+        margin-top: 10px;
+        font-size: 30px;
         color: #325dec;
     }
 }
@@ -511,8 +522,8 @@ a:hover {
         color: #325dec;
     }
     .intro div:nth-child(6) {
-        margin-top: 5px;
-        font-size: 20px;
+        margin-top: 10px;
+        font-size: 30px;
         color: #325dec;
     }
 }
