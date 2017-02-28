@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 .nav-bar-icon {
     width: 100%;
     text-align: right;
@@ -145,31 +149,31 @@ html, body {
 #section-profEx {
     padding-top: 60px;
     min-height: 90vh;
-    background-color: #0c2744;
+    background-color: #071125;
 }
 
 #section-project {
     padding-top: 60px;
     min-height: 90vh;
-    background-color: #002784;
+    background-color: #263849;
 }
 
 #section-contact {
     padding-top: 60px;
     min-height: 90vh;
-    background-color: #0c2744;
+    background-color: #071125;
 }
 
 #section-aboutMe {
     padding-top: 60px;
     min-height: 90vh;
-    background-color: #0c2744;
+    background-color: #071125;
 }
 
 #section-skills {
     padding-top: 60px;
     min-height: 90vh;
-    background-color: #002784;
+    background-color: #263849;
 }
 
 #section-intro {
@@ -181,6 +185,7 @@ html, body {
     background-position: center center;
     /*background-color: #cccccc;*/
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .section-content-contact {
@@ -315,8 +320,10 @@ a:hover {
 
 .section-header h1 {
     color: #ffffff;
-    font-family: 'Lato', sans-serif;
-    font-size: 50px;
+    /*font-family: 'Lato', sans-serif;*/
+    /*font-family: 'Crimson Text', serif;*/
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
     font-weight: 300;
     line-height: 58px;
     margin: 0;
@@ -335,44 +342,42 @@ a:hover {
 }
 
 .intro div:nth-child(1) {
-    font-size: 147px;
+    font-size: 135px;
     color: #ff3d5e;
 }
 
 .intro div:nth-child(2) {
-    font-size: 81px;
+    font-size: 72px;
     color: #00abe4;
 }
 
 .intro div:nth-child(3) {
-    font-size: 28px;
-    color: #9900d4;
+    font-size: 25px;
+    color: #ebfffa;
     margin-top: 30px;
 }
 
 .intro div:nth-child(5) {
-    font-size: 38px;
-    color: #325dec;
+    font-size: 35px;
+    color: #0dceda;
 }
 
 .intro div:nth-child(6) {
-    font-size: 45px;
+    font-size: 39px;
     margin-top: 10px;
-    color: #325dec;
+    color: #0dceda;
 }
 
 @media only screen and (max-width: 800px) {
     .intro {
         text-align: center;
         padding-left: 0px;
-        background-color: #ccc;
+        background-color: #060c10;
     }
-
-
     .section-header h1 {
         padding: 10px;
         text-align: center;
-        font-size: 30px;
+        font-size: 25px;
     }
     .section-content-prof, .section-content-project {
         margin: 0px 0px 0px 0px;
@@ -432,71 +437,25 @@ a:hover {
     #nav-bar {
         height: auto;
     }
-    /*#nav-bar {
-        align-items: baseline;
-    }
-    .nav-bar-dropdown {
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        height: auto;
-    }
-    .nav-bar-dropdown.hide {
-        max-height: 0;
-        display: none;
-    }
-    .nav-bar-icon {
-        height: 60px;
-        display: flex;
-        border-bottom: 1px solid #aaa;
-        width: 100%;
-        justify-content: flex-end;
-        margin-bottom: 0;
-    }
-    .nav-bar-icon.hide {
-        border-bottom: none;
-    }
-    .nav-left-box {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        margin-right: 0;
-        height: auto;
-    }
-    .nav-bar-div {
-        height: auto;
-        padding: 7px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-    .fa-bars {
-        display: inline-block;
-        margin: 10px;
-    }*/
     .intro div:nth-child(1) {
         font-size: 100px;
-        color: #ff3d5e;
     }
     .intro div:nth-child(2) {
         font-size: 54px;
-        color: #00abe4;
     }
     .intro div:nth-child(3) {
         font-size: 18px;
-        color: #9900d4;
         margin-top: 30px;
     }
     .intro div:nth-child(5) {
         font-size: 25px;
-        color: #325dec;
     }
     .intro div:nth-child(6) {
         margin-top: 10px;
-        font-size: 30px;
-        color: #325dec;
+        font-size: 28px;
+    }
+    #section-intro {
+        background-image: none;
     }
 }
 
@@ -506,29 +465,19 @@ a:hover {
     }
     .intro div:nth-child(1) {
         font-size: 100px;
-        color: #ff3d5e;
     }
     .intro div:nth-child(2) {
         font-size: 54px;
-        color: #00abe4;
     }
     .intro div:nth-child(3) {
         font-size: 18px;
-        color: #9900d4;
         margin-top: 30px;
     }
     .intro div:nth-child(5) {
         font-size: 25px;
-        color: #325dec;
     }
     .intro div:nth-child(6) {
         margin-top: 10px;
-        font-size: 30px;
-        color: #325dec;
-    }
-
-    #section-intro {
-        background-image: none;
-        background-color: #cccccc;
+        font-size: 28px;
     }
 }
