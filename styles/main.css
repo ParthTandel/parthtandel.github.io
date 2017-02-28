@@ -526,4 +526,9 @@ a:hover {
         font-size: 30px;
         color: #325dec;
     }
+
+    #section-intro {
+        background-image: none;
+        background-color: #cccccc;
+    }
 }
