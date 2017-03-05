@@ -15,6 +15,7 @@
                 <li><a ng-click="activeMenu = 'Pexp'; gotoElement('profExp-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Pexp'}">PROFESSIONAL EXPERIENCE</a></li>
                 <li><a ng-click="activeMenu = 'Proj'; gotoElement('project-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Proj'}">PROJECTS</a></li>
                 <li><a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Cdet'}">CONTACT DETAILS</a></li>
+                <li><a href="ParthTandelCv.pdf" target="_blank" ng-click="activeMenu = 'res';" class="nav-bar-items" ng-class="{active : activeMenu === 'res'}">RESUME</a></li>
             </ul>
         </nav>
     </div>
@@ -73,7 +74,7 @@
 
             <div class="aboutMe-box">
                 <div class="aboutMe-que">Questions ?</div>
-                <div class="aboutMe-ans">well you can contact me anywhere <a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')">here</a></div>
+                <div class="aboutMe-ans"><a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')">well you can contact me anywhere here</a></div>
             </div>
         </div>
     </div>

@@ -28,7 +28,7 @@ nav ul {
     text-align: right;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 nav ul li {
@@ -344,29 +344,34 @@ a:hover {
 
 .intro div:nth-child(1) {
     font-size: 135px;
-    color: #ff3d5e;
+    /*color: #ff3d5e;*/
+    color: #f4f4f4;
 }
 
 .intro div:nth-child(2) {
     font-size: 72px;
-    color: #00abe4;
+    /*color: #00abe4;*/
+    color: #f4f4f4;
 }
 
 .intro div:nth-child(3) {
     font-size: 25px;
-    color: #ebfffa;
+    /*color: #ebfffa;*/
+    color: #f4f4f4;
     margin-top: 30px;
 }
 
 .intro div:nth-child(5) {
     font-size: 35px;
-    color: #0dceda;
+    /*color: #0dceda;*/
+    color: #f4f4f4;
 }
 
 .intro div:nth-child(6) {
     font-size: 39px;
     margin-top: 10px;
-    color: #0dceda;
+    /*color: #0dceda;*/
+    color: #f4f4f4;
 }
 
 @media only screen and (max-width: 800px) {
