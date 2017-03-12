@@ -178,7 +178,7 @@ html, body {
 #section-intro {
     padding-top: 60px;
     height: 100vh;
-    background-image: url("../assets/images/CSC_0610.JPG");
+    background-image: url("../assets/images/CSC_0610-min.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -241,6 +241,7 @@ a:hover {
 
 .section-content-contact a:hover {
     font-size: 21px;
+    color: #E74A64;
 }
 
 .section-content-prof, .section-content-project {
@@ -334,7 +335,7 @@ a:hover {
     /*margin: 50px 0 0 100px;*/
     padding: 50px 0 0 100px;
     margin: 0;
-    height: 92vh;
+    height: 100vh;
     text-align: left;
 }
 
@@ -409,6 +410,11 @@ a:hover {
     }
     .section-content-contact div {
         font-size: 16px;
+    }
+
+    .section-content-contact a:hover {
+        font-size: 16px;
+        color: #E74A64;
     }
     .nav-bar-icon {
         display: inline-block;
