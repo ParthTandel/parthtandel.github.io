@@ -1,5 +1,5 @@
-angular.module('portfolio')
-    .controller('ScrollCtrl', function($scope, $rootScope, anchorSmoothScroll) {
+// angular.module('portfolio')
+app.controller('ScrollCtrl', function($scope, $rootScope, anchorSmoothScroll) {
         $scope.activeMenu = 'Home';
         $rootScope.reverse = false;
         $scope.toggle = false;

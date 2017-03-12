@@ -1,5 +1,5 @@
-angular.module('portfolio')
-    .service('anchorSmoothScroll', function($rootScope) {
+// angular.module('portfolio')
+app.service('anchorSmoothScroll', function($rootScope) {
         this.scrollTo = function(eID) {
             var startY = currentYPosition();
             var stopY = elmYPosition(eID);
