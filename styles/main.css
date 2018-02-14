@@ -344,8 +344,12 @@ a:hover {
 }
 
 .intro div:nth-child(1) {
-    font-size: 135px;
+    /* font-size: 135px; */
     /*color: #ff3d5e;*/
+    max-width:300px;
+    font-size: 19px;
+    font-family: 'Cookie', cursive;
+    text-align: justify;
     color: #f4f4f4;
 }
 
@@ -359,17 +363,17 @@ a:hover {
     font-size: 25px;
     /*color: #ebfffa;*/
     color: #f4f4f4;
-    margin-top: 30px;
+    margin-top: 31px;
 }
 
 .intro div:nth-child(5) {
-    font-size: 35px;
+    font-size: 25px;
     /*color: #0dceda;*/
     color: #f4f4f4;
 }
 
 .intro div:nth-child(6) {
-    font-size: 39px;
+    font-size: 19px;
     margin-top: 10px;
     /*color: #0dceda;*/
     color: #f4f4f4;
@@ -452,7 +456,10 @@ a:hover {
         height: auto;
     }
     .intro div:nth-child(1) {
+        /* font-size: 100px; */
         font-size: 100px;
+        margin-left: 10%;
+        max-width: 80%;
     }
     .intro div:nth-child(2) {
         font-size: 54px;
@@ -478,7 +485,11 @@ a:hover {
         font-size: 16px;
     }
     .intro div:nth-child(1) {
-        font-size: 100px;
+        font-size: 19px;
+        text-align: center;
+        font-family: 'Cookie', cursive;
+        margin-left: 10%;
+        max-width: 80%;
     }
     .intro div:nth-child(2) {
         font-size: 54px;

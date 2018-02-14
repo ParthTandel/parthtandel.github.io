@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.6.8",
     "hover.css": "^2.0.2"
   },
   "devDependencies": {
