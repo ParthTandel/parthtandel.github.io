@@ -363,13 +363,13 @@ a:hover {
 }
 
 .intro div:nth-child(5) {
-    font-size: 35px;
+    font-size: 49px;
     /*color: #0dceda;*/
     color: #f4f4f4;
 }
 
 .intro div:nth-child(6) {
-    font-size: 39px;
+    font-size: 25px;
     margin-top: 10px;
     /*color: #0dceda;*/
     color: #f4f4f4;
@@ -462,11 +462,11 @@ a:hover {
         margin-top: 30px;
     }
     .intro div:nth-child(5) {
-        font-size: 25px;
+        font-size: 36px;
     }
     .intro div:nth-child(6) {
         margin-top: 10px;
-        font-size: 28px;
+        font-size: 19px;
     }
     #section-intro {
         background-image: none;
@@ -488,10 +488,10 @@ a:hover {
         margin-top: 30px;
     }
     .intro div:nth-child(5) {
-        font-size: 25px;
+        font-size: 36px;
     }
     .intro div:nth-child(6) {
         margin-top: 10px;
-        font-size: 28px;
+        font-size: 19px;
     }
 }
