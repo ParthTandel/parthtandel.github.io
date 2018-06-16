@@ -10,10 +10,10 @@
             </div>
             <ul class="nav-dropdown" ng-class="{ show : toggle === true}">
                 <li><a ng-click="activeMenu = 'Home'; gotoElement('home-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Home'}">HOME</a></li>
-                <li><a ng-click="activeMenu = 'About'; gotoElement('aboutme-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'About'}">ABOUT ME</a></li>
-                <li><a ng-click="activeMenu = 'Skills'; gotoElement('skills-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Skills'}">SKILLS</a></li>
                 <li><a ng-click="activeMenu = 'Pexp'; gotoElement('profExp-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Pexp'}">PROFESSIONAL EXPERIENCE</a></li>
                 <li><a ng-click="activeMenu = 'Proj'; gotoElement('project-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Proj'}">PROJECTS</a></li>
+                <li><a ng-click="activeMenu = 'Skills'; gotoElement('skills-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Skills'}">SKILLS</a></li>
+                <li><a ng-click="activeMenu = 'About'; gotoElement('aboutme-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'About'}">ABOUT ME</a></li>
                 <li><a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')" class="nav-bar-items" ng-class="{active : activeMenu === 'Cdet'}">CONTACT DETAILS</a></li>
                 <li><a href="ParthTandelCv.pdf" target="_blank" ng-click="activeMenu = 'res';" class="nav-bar-items" ng-class="{active : activeMenu === 'res'}">RESUME</a></li>
             </ul>
@@ -44,81 +44,6 @@
       </div>
     </div>
 
-    <a id="aboutme-anchor"></a>
-    <div id="section-aboutMe">
-        <div class="section-header">
-            <h1>About me</h1>
-        </div>
-
-        <div class="section-content-aboutMe" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'About' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'About' && reverse == true}">
-            <div class="aboutMe-box">
-                <div class="aboutMe-que">Who am i ?</div>
-                <div class="aboutMe-ans">Hello, my name is Parth, I am pursuing Data science at Northeastern University, Boston. I am looking for Co-Op and internship roles in the field of Data science. I completed my Undergrad at Dhirubhai Ambani Institute of Information and communication technology. I have also worked on Data science related projects. To gain more knowledge in the field of Data science I join the Masters in data science program at the Northeastern University in fall 2017.</div>
-            </div>
-            <div class="aboutMe-box">
-                <div class="aboutMe-que">What i do ?</div>
-                <div class="aboutMe-ans">I work on both Data science and software engineering problems. Pretty much anything that deals with a computer program.</div>
-            </div>
-
-            <div class="aboutMe-box">
-                <div class="aboutMe-que">Current Position ?</div>
-                <div class="aboutMe-ans">Currently i am a student at Northeastern. Have worked for three startups in past and currently looking for a new one to start fresh.</div>
-            </div>
-
-
-            <div class="aboutMe-box">
-                <div class="aboutMe-que">Free time ?</div>
-                <div class="aboutMe-ans">In my free time I do photography. I own a nikon D5100 and like to show off about it. Other than that i invest most of my time in watching tv series and movies</div>
-            </div>
-
-
-            <div class="aboutMe-box">
-                <div class="aboutMe-que">Questions ?</div>
-                <div class="aboutMe-ans"><a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')">well you can contact me anywhere here</a></div>
-            </div>
-        </div>
-    </div>
-
-    <a id="skills-anchor"></a>
-    <div id="section-skills">
-        <div class="section-header">
-            <h1>Skills</h1>
-        </div>
-
-        <div class="section-content-skills" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Skills' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'Skills' && reverse == true}">
-
-            <div class="aboutMe-box">
-                <div class="aboutMe-que">Data Science Tools</div>
-                <div class="aboutMe-ans">Pandas, R, R shiny, dplyr, Topicmodels, NumPy, SciPy, Sci-Kit learn ,spacy, gensim, Stanford NLP</div>
-            </div>
-
-            <div class="aboutMe-box">
-                <div class="aboutMe-que"> Backend</div>
-                <div class="aboutMe-ans">Python, Django, Django-rest, Node.js, Loopback.js, PHP, Codeignitor, Java, c, c++</div>
-            </div>
-            <div class="aboutMe-box">
-                <div class="aboutMe-que">Frontend</div>
-                <div class="aboutMe-ans">Angular.js, Jquery, CSS3, HTML5</div>
-            </div>
-
-            <div class="aboutMe-box">
-                <div class="aboutMe-que">Browser and Desktop</div>
-                <div class="aboutMe-ans">chrome extentions, firefox plugin, java Swing.</div>
-            </div>
-
-
-            <div class="aboutMe-box">
-                <div class="aboutMe-que">Database</div>
-                <div class="aboutMe-ans">Mysql, MongoDB, pouch/couch db</div>
-            </div>
-
-            <div class="aboutMe-box">
-                <div class="aboutMe-que">Currently learning</div>
-                <div class="aboutMe-ans">Machine Learning, Natural language processing, Information retrival, react and redux, docker</div>
-            </div>
-        </div>
-    </div>
-
     <a id="profExp-anchor"></a>
     <div id="section-profEx">
         <div class="section-header">
@@ -128,14 +53,55 @@
 
           <div class="company">
               <div class="image-box">
-                  <a href="http://sublimedatasys.com/" target="_blank">
-                      <img alt="creatx" src="../assets/images/sublimedata.png" width="340" height="200">
+                  <a href="https://www.wwp.neu.edu/" target="_blank">
+                      <img alt="creatx" src="../assets/images/wwp.png" width="340" height="200">
                       <div class="image-footer">
-                          sublime data systems
+                          Womens Writers Project
                       </div>
                   </a>
               </div>
               <div class="content-box">
+
+                  <div class="company-info">
+                      <div class="company-title">
+                        Womens Writers Project
+                      </div>
+                      <span class="company-position">
+                    Reasearch Assistant
+                  </span>
+                      <span class="company-period">
+                    May 2018 - Current
+                  </span>
+                  </div>
+                  <div class="company-description">
+                    The Women Writers Project is a long-term research project devoted to early modern women's writing and electronic text encoding. The project focus on bringing text by pre-Victorian women writers out of the archive and make them accessible to a wide audience of teachers, students, scholars, and the general reader.
+                  </div>
+                  <div class="company-experience">
+                      <div class="company-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>Word2vect analysis on text written by early women writers using different models in python and R</span>
+                      </div>
+                      <div class="company-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>Worked on TensorFlow and genism in Python and word vector package in R to build a model to do word vector analysis</span>
+                      </div>
+                      <div class="company-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>Creadting a dashboard using R-shinny and tensor board to build a visualization portal hosted online on women writer’s project domain online</span>
+                      </div>
+                      <div class="company-exp-bullets">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                          <span>Using Nginx and mass open cloud server hosted the website online</span>
+                      </div>
+
+
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="company">
+              <div class="content-box left">
 
                   <div class="company-info">
                       <div class="company-title">
@@ -154,13 +120,21 @@
                   <div class="company-experience">
                       <div class="company-exp-bullets">
                           <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                          <span>Lead and trained a team of 4 developers to handle roles involving full stack development in technologies like PHP, codeigniter, node,js ,python, mongo, MySQL, Angular.js, AWS(ec2, rds), REST, Gearman.</span>
+                          <span>Led and trained a team of 4 developers to handle roles involving full stack development in technologies like PHP, codeigniter, node,js ,python, mongo, MySQL, Angular.js, AWS(ec2, rds), REST, Gearman.</span>
                       </div>
                       <div class="company-exp-bullets">
                           <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
                           <span>Built and deployed 2 large scale projects involving health sector and social network in a time span of 6 months with the same developers</span>
                       </div>
                   </div>
+              </div>
+              <div class="image-box left">
+                  <a href="http://sublimedatasys.com/" target="_blank">
+                      <img alt="creatx" src="../assets/images/sublimedata.png" width="340" height="200">
+                      <div class="image-footer">
+                          sublime data systems
+                      </div>
+                  </a>
               </div>
           </div>
 
@@ -172,7 +146,7 @@
                             creatx.io
                         </div>
                     </a>
-                </div>
+                  </div>
                 <div class="content-box">
 
                     <div class="company-info">
@@ -216,15 +190,7 @@
             </div>
 
             <div class="company">
-                <div class="image-box">
-                    <a href="https://www.plexusmd.com/home" target="_blank">
-                        <img alt="creatx" src="../assets/images/plexus.png" width="340" height="200">
-                        <div class="image-footer">
-                            plexusmd
-                        </div>
-                    </a>
-                </div>
-                <div class="content-box">
+                <div class="content-box left">
 
                     <div class="company-info">
                         <div class="company-title">
@@ -266,6 +232,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="image-box left">
+                    <a href="https://www.plexusmd.com/home" target="_blank">
+                        <img alt="creatx" src="../assets/images/plexus.png" width="340" height="200">
+                        <div class="image-footer">
+                            plexusmd
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -276,26 +250,26 @@
             <h1>Projects </h1>
         </div>
         <div class="section-content-project" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Proj' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'Proj' && reverse == true   }">
-            <div class="project">
+            <!-- <div class="project">
                 <div class="content-box">
                     <div class="project-info">
                         <div class="project-title">
-                            Stock Falcon
+                          Reinforcement Learning Agent that plays Supermario Bros
                         </div>
                         <span class="project-place">
-                    DA-IICT
+                    Northeastern University
                   </span>
                         <span class="project-period">
-                    Jan 2016 - May 2016
+                    March 2018 - April 2018
                   </span>
                     </div>
                     <div class="project-description">
-                        Stock falcon is a NIFTY companies based predication portal which allows you to maintain your portfolio online and provides you with other tools that deals with stock prices.
+                      The project involved developing an Artificial Intelligence Agent using Q learning and Deep neural network to play super mario bros.
                     </div>
                     <div class="project-experience">
                         <div class="project-exp-bullets">
                             <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                            <span>lead the development team for the course of the project.</span>
+                            <span>Using python and tensorflow built convolutional neural network </span>
                         </div>
                         <div class="project-exp-bullets">
                             <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
@@ -315,7 +289,195 @@
                         </div>
                     </div>
                 </div>
+                <div class="image-box">
+                    <a href="https://github.com/ParthTandel/Stock_Falcon" target="_blank">
+                        <img alt="creatx" src="../assets/images/stockfalcon.png" width="340" height="200">
+                        <div class="image-footer">
+                            stock falcon
+                        </div>
+                    </a>
+                </div>
+            </div> -->
 
+
+            <div class="project">
+                <div class="content-box">
+                    <div class="project-info">
+                        <div class="project-title">
+                          Reinforcement Learning Agent that plays Supermario Bros
+                        </div>
+                        <span class="project-place">
+                          Northeastern University
+                  </span>
+                        <span class="project-period">
+                          March 2018 - April 2018
+                  </span>
+                    </div>
+                    <div class="project-description">
+                      The project involved developing an Artificial Intelligence Agent using Q learning and Deep neural network to play super mario bros.
+                    </div>
+                    <div class="project-experience">
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Used python tensorflow to develop a convolutional neural network that predict Q values for different state.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Used openai gym to extract frames and other game related data such as scores and deaths etc </span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Used nvidia cuda gpu tu run the training</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <a href="#" target="_blank">
+                        <img alt="creatx" src="../assets/images/super-mario.jpg" width="340" height="200">
+                        <div class="image-footer">
+                            Mario Bot
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="content-box">
+                    <div class="project-info">
+                        <div class="project-title">
+                          Unsupervised Machine Learning
+                        </div>
+                        <span class="project-place">
+                      Northeastern University
+                  </span>
+                        <span class="project-period">
+                    Jan. 2018 - Apr. 2018
+                  </span>
+                    </div>
+                    <div class="project-description">
+                      A course project which involved analysis of different type of dataset using Unsupervised machine learning techiques.
+                    </div>
+                    <div class="project-experience">
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Explored different type of datasets like mnist, 20 news group data, spam base and fashion mnist</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Developed k-nearest neighbours from scratch to compare supervised machine learning analysis on the above datasets.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Developed k-means clustering and  soft k-means(gaussian mixtures) clustering algorithm to cluster above datasets.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Developed DB-scan clustering to cluster data where techiques like k-means to cluster data fails</span>
+                        </div>
+
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Developed and explore dimensionality reduction technique like PCA, chisquare, supervised machine learning to extract features etc  </span>
+                        </div>
+
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Developed different types fo sampling techniques such as gibbs sampling, stevens sampling method, gaussian sampling etc and using them performed topic modeling on text datasets</span>
+                        </div>
+
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span> Developed girvan-newman algorithm for comunity detection </span>
+                        </div>
+
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span> Developed a movies rating prediction algortihm to predict movie ratings for different users based on data scraped from imdb </span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project">
+                <div class="content-box">
+                    <div class="project-info">
+                        <div class="project-title">
+                          Topic modeling to cluster news Article
+                        </div>
+                        <span class="project-place">
+                          Northeastern University
+                  </span>
+                        <span class="project-period">
+                    May 2015 - June 2015
+                  </span>
+                    </div>
+                    <div class="project-description">
+                      A course project to cluster news article in to different news group using R and python in real time.
+                    </div>
+                    <div class="project-experience">
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Used python libraries and RSS feeds to scrape live news data over the internet every day</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Used amazon ec2 instance and set up a cron job to run the scraping script every day and download the data to a MongoDB server.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Used R's topicmodels library to run clustering and store the result in MongoDB</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Created a R-shiny and d3js visualisation application to visualise contents online</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project">
+                <div class="content-box">
+                    <div class="project-info">
+                        <div class="project-title">
+                            Stock Falcon
+                        </div>
+                        <span class="project-place">
+                    DA-IICT
+                  </span>
+                        <span class="project-period">
+                    Jan 2016 - May 2016
+                  </span>
+                    </div>
+                    <div class="project-description">
+                        Stock falcon is a NIFTY companies based predication portal which allows you to maintain your portfolio online and provides you with other tools that deals with stock prices.
+                    </div>
+                    <div class="project-experience">
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>led the development team for the course of the project.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>worked on back-end as well as Front-end modules involving PHP.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>designed the application flow.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>deployed to aws and hosted using bitnammi.</span>
+                        </div>
+                        <div class="project-exp-bullets">
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            <span>Designed and deployed database on MySQL.</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="image-box">
                     <a href="https://github.com/ParthTandel/Stock_Falcon" target="_blank">
                         <img alt="creatx" src="../assets/images/stockfalcon.png" width="340" height="200">
@@ -365,6 +527,76 @@
 
         </div>
     </div>
+
+
+    <a id="skills-anchor"></a>
+    <div id="section-skills">
+        <div class="section-header">
+            <h1>Skills</h1>
+        </div>
+
+        <div class="section-content-skills" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'Skills' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'Skills' && reverse == true}">
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Languages</div>
+                <div class="aboutMe-ans">Python, R, PHP, JavaScript, C, C++, Java, CSS, HTML</div>
+            </div>
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Tools</div>
+                <div class="aboutMe-ans">Jupyter, Pandas, TensorFlow, R shiny, D3js, shiny dashboard, dplyr, <br>Topicmodels, NumPy, SciPy, Sci-Kit learn ,spacy, gensim, Stanford NLP, NLTK, Elastic Search, Kibana, Lucene, WordVector, Git, Tableau, processing-java </div>
+            </div>
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que"> Website Development tools</div>
+                <div class="aboutMe-ans">Django, Django-rest, Node.js, Loopback.js, Codeignitor, Angular.js, Jquery, Slack-API, postman, Mochajs, chaijs, Nginx, Apache</div>
+            </div>
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Browser and Desktop</div>
+                <div class="aboutMe-ans">chrome extentions, firefox plugin, java Swing.</div>
+            </div>
+
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Database</div>
+                <div class="aboutMe-ans">Mysql, MongoDB, pouch/couch db</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <a id="aboutme-anchor"></a>
+    <div id="section-aboutMe">
+        <div class="section-header">
+            <h1>About me</h1>
+        </div>
+
+        <div class="section-content-aboutMe" ng-class="{ 'animated fadeInUpBig' : activeMenu === 'About' && reverse == false , 'animated fadeInDownBig' : activeMenu === 'About' && reverse == true}">
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Who am i ?</div>
+                <div class="aboutMe-ans">Hello, my name is Parth, I am pursuing Data science at Northeastern University, Boston. I am looking for Co-Op and internship roles in the field of Data science. I completed my Undergrad at Dhirubhai Ambani Institute of Information and communication technology. I have both professional and acedemic experience in Data science.</div>
+            </div>
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">What i do ?</div>
+                <div class="aboutMe-ans">I work on both Data science and software engineering problems. I am intrested in roles that involves both engineering with data and analysis on it.</div>
+            </div>
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Current Position ?</div>
+                <div class="aboutMe-ans">Currently i am a student at Northeastern. I have worked for three startups in past and currently looking for a new role to start fresh.</div>
+            </div>
+
+            <div class="aboutMe-box">
+                <div class="aboutMe-que">Questions ?</div>
+                <div class="aboutMe-ans"><a ng-click="activeMenu = 'Cdet'; gotoElement('contact-anchor')">well you can contact me anywhere here</a></div>
+            </div>
+        </div>
+    </div>
+
+
 
     <a id="contact-anchor"></a>
     <div id="section-contact">

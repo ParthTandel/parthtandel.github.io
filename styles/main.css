@@ -290,13 +290,23 @@ a:hover {
     margin-left: 40px;
 }
 
+.company .content-box.left {
+    margin-left: 0px;
+}
+
 .project .content-box {
     margin-right: 20px;
+    width: 80%
 }
 
 .image-box {
     border-radius: 10px;
 }
+
+.image-box.left {
+  margin-left: 40px;
+}
+
 
 .image-box:hover {
     -moz-box-shadow: 3px 3px 5px #999;
@@ -398,6 +408,7 @@ a:hover {
     }
     .company .content-box, .project .content-box {
         margin-left: 10px;
+        width: 80%;
         order: 1;
     }
     .image-box {

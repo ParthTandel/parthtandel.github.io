@@ -12,6 +12,7 @@
     "hover.css": "^2.0.2"
   },
   "devDependencies": {
+    "angular": "^1.7.0",
     "grunt": "^1.0.2",
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-imagemin": "^1.0.1",
