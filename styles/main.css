@@ -17,7 +17,8 @@
     width: 100%;
     height: 60px;
     z-index: 100;
-    color: rgba(158, 158, 158, 0.74);
+    color: rgba(0, 0, 0, 0.74)
+    /* color: rgba(158, 158, 158, 0.74); */
 }
 
 nav ul {
@@ -57,11 +58,12 @@ a {
 }
 
 .nav-bar-items:hover {
-    color: #029bde;
+    color: #029bde !important;
+    text-decoration: none;
 }
 
 .active {
-    color: #029bde;
+    color: #029bde !important;
 }
 
 html, body {
@@ -147,38 +149,38 @@ html, body {
 
 #section-profEx {
     padding-top: 60px;
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: #071125;
 }
 
 #section-project {
     padding-top: 60px;
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: #263849;
 }
 
 #section-contact {
     padding-top: 60px;
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: #071125;
 }
 
 #section-aboutMe {
     padding-top: 60px;
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: #263849;
 }
 
 #section-skills {
     padding-top: 60px;
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: #071125;
 }
 
 #section-intro {
     padding-top: 60px;
     height: 100vh;
-    background-image: url("../assets/images/CSC_0610-min.JPG");
+    background-image: url("../assets/images/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -342,48 +344,69 @@ a:hover {
 }
 
 .intro {
-    /*margin: 50px 0 0 100px;*/
-    padding: 50px 0 0 100px;
+    /* padding: 50px 0 0 100px; */ */
     margin: 0;
+    /* align: center; */
+    /* background-color: #002954; */
+    padding-top: 10%;
+
     height: 100vh;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .layer {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-.intro div:nth-child(1) {
-    font-size: 135px;
-    /*color: #ff3d5e;*/
-    color: #f4f4f4;
+.intro-name {
+    font-size: 60px;
+    color: white;
 }
 
-.intro div:nth-child(2) {
-    font-size: 72px;
-    /*color: #00abe4;*/
-    color: #f4f4f4;
+.intro-details {
+  font-size: 24px;
+  color: white;
 }
 
+
+.intro-talk {
+  border: 3px;
+  border-color: #f8f9fa;
+  font-size: 26px;
+  color: white;
+  margin-top: 18px;
+  border-style: solid;
+  width: 12%;
+
+}
+
+.intro-talk a:hover{
+  color: #88f392;
+  text-decoration: none;
+}
+
+.intro-talk:hover {
+  color: #88f392;
+  border-color: #88f392;
+  cursor: pointer;
+}
+/*
 .intro div:nth-child(3) {
     font-size: 25px;
-    /*color: #ebfffa;*/
     color: #f4f4f4;
     margin-top: 30px;
 }
 
 .intro div:nth-child(5) {
     font-size: 49px;
-    /*color: #0dceda;*/
     color: #f4f4f4;
 }
 
 .intro div:nth-child(6) {
     font-size: 25px;
     margin-top: 10px;
-    /*color: #0dceda;*/
     color: #f4f4f4;
-}
+} */
 
 @media only screen and (max-width: 800px) {
     .intro {
